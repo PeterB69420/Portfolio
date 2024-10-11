@@ -32,7 +32,7 @@
 }
 
 .menu__link {
-  background-image: linear-gradient(to right, #F08700, #F08700 50%, #ffffff 50%);
+  background-image: linear-gradient(to right, #e2b616, #e2b616 50%, #ffffff 50%);
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -46,7 +46,7 @@
 
 .menu__link:before {
   content: "";
-  background: #F08700;
+  background: #e2b616;
   display: block;
   position: absolute;
   bottom: -3px;
