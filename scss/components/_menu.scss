@@ -1,16 +1,57 @@
-@import url(../_variables.scss);
+@use '../variables';
+
 .menu{
-    background-color: variables.$taupe-brown;
+    height: 35px;
+    background-color: variables.$nav-color;
+    place-content: center;
     &__list{
         display: flex;
         justify-content: center;
-        list-style: none;
+        list-style: none;   
         gap: 2rem;
-
+        font-family: variables.$nav-font;
+        color: variables.$white-color;
     }
     &__link{
-        text-decoration: none;
-        font-family: var($nav-font:);
         font-weight: bold;
+        text-decoration: none;
     }
 }
+
+.menu__link {
+    background-image: linear-gradient(
+      to right,
+      #F08700,
+      #F08700 50%,
+      #ffffff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu__link:before{
+    content: '';
+    background:  variables.$hover-color;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu__link:hover {
+   background-position: 0;
+  }
+  
+  .menu__link:hover::before{
+    width: 100%;
+  }
