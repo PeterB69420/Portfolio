@@ -1,0 +1,16 @@
+@import url(../_variables.scss);
+.menu{
+    background-color: variables.$taupe-brown;
+    &__list{
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        gap: 2rem;
+
+    }
+    &__link{
+        text-decoration: none;
+        font-family: var($nav-font:);
+        font-weight: bold;
+    }
+}

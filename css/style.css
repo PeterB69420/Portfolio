@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  font-family: inherit;
+  color: inherit;
+  scroll-behavior: smooth;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
+}
+.menu__link {
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+}/*# sourceMappingURL=style.css.map */
